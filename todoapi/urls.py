@@ -23,5 +23,6 @@ urlpatterns = [
     path('api/v1/todos/<int:id>',views.TodoDetail.as_view()),
     path('api/v1/mytodos',views.MyTodos.as_view()),
     path('api/v2/',include("todoapp.urls"))
+
 ]
 # api/v1/todos?{userid=1}
